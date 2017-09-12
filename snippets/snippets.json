@@ -1,0 +1,111 @@
+{
+  "Import React": {
+    "prefix": "imr",
+    "body": ["import React from 'react';"],
+    "description": "Import React"
+  },
+
+  "Import React, { Component }": {
+    "prefix": "imrc",
+    "body": ["import React, { Component } from 'react';"],
+    "description": "Import React, { Component }"
+  },
+
+  "Class Component": {
+    "prefix": "cc",
+    "body": [
+      "class $1 extends Component {",
+      "\trender() { ",
+      "\t\treturn $0;",
+      "\t}",
+      "}",
+      " ",
+      "export default $1;"
+    ],
+    "description": "Class Component"
+  },
+
+  "Class Component Constructor": {
+    "prefix": "ccc",
+    "body": [
+      "class $1 extends Component {",
+      "\tconstructor() {",
+      "\t\tsuper();",
+      "\t\t$2",
+      "\t}",
+      "\trender() { ",
+      "\t\treturn $0",
+      "\t}",
+      "}",
+      " ",
+      "export default $1;"
+    ],
+    "description": "Class Component Constructor"
+  },
+
+  "Stateless Function Component": {
+    "prefix": "sfc",
+    "body": [
+      "const $1 = ($2) => {",
+      "\treturn $0",
+      "}",
+      " ",
+      "export default $1;"
+    ],
+    "description": "Stateless Function Component"
+  },
+
+  "componentDidMount": {
+    "prefix": "cdm",
+    "body": ["componentDidMount() {", "\t$0", "}"],
+    "description": "componentDidMount"
+  },
+
+  "componentWillMount": {
+    "prefix": "cwm",
+    "body": ["componentWillMount() {", "\t$0", "}"],
+    "description": "componentWillMount"
+  },
+
+  "componentWillReceiveProps": {
+    "prefix": "cwrp",
+    "body": ["componentWillReceiveProps(nextProps) {", "\t$0", "}"],
+    "description": "componentWillReceiveProps"
+  },
+
+  "shouldComponentUpdate": {
+    "prefix": "scu",
+    "body": ["shouldComponentUpdate(nextProps, nextState) {", "\t$0", "}"],
+    "description": "shouldComponentUpdate"
+  },
+
+  "componentWillUpdate": {
+    "prefix": "cwu",
+    "body": ["componentWillUpdate() {", "\t$0", "}"],
+    "description": "componentWillUpdate"
+  },
+
+  "componentDidUpdate": {
+    "prefix": "cdu",
+    "body": ["componentDidUpdate() {", "\t$0", "}"],
+    "description": "componentDidUpdate"
+  },
+
+  "componentWillUnmount": {
+    "prefix": "cwun",
+    "body": ["componentWillUnmount() {", "\t$0", "}"],
+    "description": "componentWillUnmount"
+  },
+
+  "setState": {
+    "prefix": "ss",
+    "body": ["this.setState({ $1: $2 });"],
+    "description": "setState"
+  },
+
+  "render": {
+    "prefix": "ren",
+    "body": ["render() {", "\treturn (", "\t\t $0", "\t)", "}"],
+    "description": "render"
+  }
+}

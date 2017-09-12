@@ -1,0 +1,25 @@
+{
+  "name": "simple-react-snippets",
+  "displayName": "Simple React Snippets",
+  "description": "Dead simple React snippets you will actually use",
+  "version": "1.0.0",
+  "publisher": "burkeholland",
+  "icon": "images/simple-react.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/burkeholland/simple-react-snippets.git"
+  },
+  "keywords": ["React", "React JS", "React Snippets"],
+  "engines": {
+    "vscode": "^1.13.0"
+  },
+  "categories": ["Snippets"],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/snippets.json"
+      }
+    ]
+  }
+}
