@@ -2,7 +2,7 @@
 
 The essential collection of React Snippets.
 
-![](https://i.imgur.com/kfRAL5q.gifv)
+<img src="https://i.imgur.com/kfRAL5q.gifv" />
 
 ## Features
 
