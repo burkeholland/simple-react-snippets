@@ -54,11 +54,12 @@ class MyClass extends Component {
 export default MyClass;
 ```
 
-### ccc - Class Component With Constructor
+### ccc - Class Component With State
 ```javascript
 class MyClass extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
+    this.state = { };
   }
   render() {
     return <div />;
@@ -114,7 +115,7 @@ componentWillUpdate() {
 
 ### cdu - componentDidUpdate
 ```javascript
-componentDidUpdate() {
+componentDidUpdate(prevProps) {
 
 }
 ```
@@ -141,6 +142,17 @@ render() {
 ```
 
 ## Release Notes
+
+### 1.0.2
+
+* Change "Create Class With Constructor" to "Create Class With State"
+* Pass `props` to constructor and super call
+* Add `this.state` to constructor
+* Pass `prevProps` to `componentDidUpdate`
+
+### 1.0.1
+
+Complete README with samples
 
 ### 1.0.0
 
