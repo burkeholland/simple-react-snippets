@@ -97,6 +97,12 @@
     "description": "componentWillUnmount"
   },
 
+  "componentDidCatch": {
+    "prefix": "cdc",
+    "body": ["componentDidCatch(error, info) {", "\t$0", "}"],
+    "description": "componentDidCatch"
+  },
+
   "setState": {
     "prefix": "ss",
     "body": ["this.setState({ $1: $2 });"],

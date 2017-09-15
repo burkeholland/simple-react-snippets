@@ -29,6 +29,7 @@ These snippets were selected carefully from my own day-to-day React use. Not eve
 | `cwu`                  | componentWillUpdate |
 | `cdu`                  | componentDidUpdate |
 | `cwu`                  | componentWillUpdate |
+| `cdc`                  | componentDidCatch |
 | `ss`                   | setState |
 | `ren`                  | render |
 
@@ -123,6 +124,13 @@ componentDidUpdate(prevProps) {
 ### cwun - componentWillUnmount
 ```javascript
 componentWillUnmount() {
+
+}
+```
+
+### cdc - componentDidCatch
+```javascript
+componentDidCatch(error, info) {
 
 }
 ```
