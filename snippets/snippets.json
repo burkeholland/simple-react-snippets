@@ -15,11 +15,11 @@
     "prefix": "cc",
     "body": [
       "class $1 extends Component {",
-      "\trender() { ",
+      "\trender() {",
       "\t\treturn $0;",
       "\t}",
       "}",
-      " ",
+      "",
       "export default $1;"
     ],
     "description": "Class Component"
@@ -33,11 +33,11 @@
       "\t\tsuper(props);",
       "\t\tthis.state = { $2 }",
       "\t}",
-      "\trender() { ",
+      "\trender() {",
       "\t\treturn $0",
       "\t}",
       "}",
-      " ",
+      "",
       "export default $1;"
     ],
     "description": "Class Component With State"
@@ -49,7 +49,7 @@
       "const $1 = ($2) => {",
       "\treturn $0",
       "}",
-      " ",
+      "",
       "export default $1;"
     ],
     "description": "Stateless Function Component"
@@ -105,7 +105,7 @@
 
   "render": {
     "prefix": "ren",
-    "body": ["render() {", "\treturn (", "\t\t $0", "\t)", "}"],
+    "body": ["render() {", "\treturn (", "\t\t$0", "\t)", "}"],
     "description": "render"
   }
 }
