@@ -143,6 +143,10 @@ render() {
 
 ## Release Notes
 
+### 1.0.3
+
+* Add `nextProps` and `nextState` to `componentWillUpdate`
+
 ### 1.0.2
 
 * Change "Create Class With Constructor" to "Create Class With State"
@@ -157,3 +161,10 @@ Complete README with samples
 ### 1.0.0
 
 Initial release of Simple React Snippets 🔥
+
+#### Thank You
+
+Special thanks to the following individuals who have helped with this project in some way.
+
+* [@dan_abramov](https://twitter.com/dan_abramov)
+* [@adiun](https://twitter.com/adiun)
