@@ -143,7 +143,7 @@ render() {
 
 ## Release Notes
 
-### 1.0.3
+### 1.0.4
 
 * Add `nextProps` and `nextState` to `componentWillUpdate`
 
