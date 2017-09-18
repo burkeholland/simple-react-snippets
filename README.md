@@ -108,14 +108,14 @@ shouldComponentUpdate(nextProps, nextState) {
 
 ### cwu - componentWillUpdate
 ```javascript
-componentWillUpdate() {
+componentWillUpdate(nextProps, nextState) {
 
 }
 ```
 
 ### cdu - componentDidUpdate
 ```javascript
-componentDidUpdate(prevProps) {
+componentDidUpdate(prevProps, prevState) {
 
 }
 ```

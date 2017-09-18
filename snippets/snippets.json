@@ -81,13 +81,13 @@
 
   "componentWillUpdate": {
     "prefix": "cwu",
-    "body": ["componentWillUpdate() {", "\t$0", "}"],
+    "body": ["componentWillUpdate(nextProps, nextState) {", "\t$0", "}"],
     "description": "componentWillUpdate"
   },
 
   "componentDidUpdate": {
     "prefix": "cdu",
-    "body": ["componentDidUpdate(prevProps) {", "\t$0", "}"],
+    "body": ["componentDidUpdate(prevProps, prevState) {", "\t$0", "}"],
     "description": "componentDidUpdate"
   },
 
