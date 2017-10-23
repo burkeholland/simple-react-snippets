@@ -11,6 +11,12 @@
     "description": "Import React, { Component }"
   },
 
+  "Import PropTypes": {
+    "prefix": "impt",
+    "body": ["import PropTypes from 'prop-types';"],
+    "description": "Import PropTypes"
+  },
+
   "Class Component": {
     "prefix": "cc",
     "body": [
