@@ -19,6 +19,7 @@ These snippets were selected carefully from my own day-to-day React use. Not eve
 | ---------------------- | ------------------- |
 | `imr`                  | Import React |
 | `imrc`                 | Import React / Component |
+| `impt`                 | Import PropTypes |
 | `cc`                   | Class Component |
 | `ccc`                  | Class Component With Constructor |
 | `sfc`                  | Stateless Function Component |
@@ -41,6 +42,10 @@ import React from 'react';
 ### imrc - Import React, Component
 ```javascript
 import React, { Component } from 'react';
+```
+### impt - Import PropTypes
+```javascript
+import PropTypes from 'prop-types';
 ```
 
 ### cc - Class Component
