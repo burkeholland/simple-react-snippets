@@ -148,6 +148,12 @@ render() {
 
 ## Release Notes
 
+### 1.0.5
+
+* Add "Import PropTypes" snippet (`impt`) - [@overra](https://github.com/overra)
+* Add "Component Did Catch" snippet (`cdc`) - [@ghosh](https://github.com/ghosh)
+* Add support for JSX files - [@seanmcbreen](https://github.com/seanmcbreen)
+
 ### 1.0.4
 
 * Add `nextProps` and `nextState` to `componentWillUpdate`
