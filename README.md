@@ -51,110 +51,117 @@ import PropTypes from 'prop-types';
 
 ### cc - Class Component
 ```javascript
-class MyClass extends Component {
+class | extends Component {
+  state = { | },
   render() {
-    return <div />;
+    return ( | );
   }
 }
 
-export default MyClass;
+export default |;
 ```
 
 ### ccc - Class Component With State
 ```javascript
-class MyClass extends Component {
+class | extends Component {
   constructor(props) {
     super(props);
-    this.state = { };
+    this.state = { | };
   }
   render() {
-    return <div />;
+    return ( | );
   }
 }
 
-export default MyClass;
+export default |;
 ```
 
 ### sfc - Stateless Function Component
 ```javascript
-const MyComponent = props => {
-  return <div />;
+const | = props => {
+  return ( | );
 };
 
-export default MyComponent;
+export default |;
 ```
 
 ### cdm - componentDidMount
 ```javascript
 componentDidMount() {
-
+  |
 }
 ```
 
 ### cwm - componentWillMount
 ```javascript
 componentWillMount() {
-
+  |
 }
 ```
 
 ### cwrp - componentWillReceiveProps
 ```javascript
 componentWillReceiveProps(nextProps) {
-
+  |
 }
 ```
 
 ### scu - shouldComponentUpdate
 ```javascript
 shouldComponentUpdate(nextProps, nextState) {
-
+  |
 }
 ```
 
 ### cwu - componentWillUpdate
 ```javascript
 componentWillUpdate(nextProps, nextState) {
-
+  |
 }
 ```
 
 ### cdu - componentDidUpdate
 ```javascript
 componentDidUpdate(prevProps, prevState) {
-
+  |
 }
 ```
 
 ### cwun - componentWillUnmount
 ```javascript
 componentWillUnmount() {
-
+  |
 }
 ```
 
 ### cdc - componentDidCatch
 ```javascript
 componentDidCatch(error, info) {
-
+  |
 }
 ```
 
 ### ss - setState
 ```javascript
-this.setState({  :  });  
+this.setState({ | : | });  
 ```
 
 ### ren - render
 ```javascript
 render() {
   return (
-      
+    |
   )
 }
 ```
 
 ## Release Notes
+
+### 1.0.6
+
+* Add state prop to Component Class (`cc`)
+* Wrap return from render in `()` by default for Component Class (`cc`) and Component Class Constructor (`ccc`)
+* Use pipes in README to better articulate tab stops
 
 ### 1.0.5
 

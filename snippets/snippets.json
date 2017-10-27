@@ -21,8 +21,9 @@
     "prefix": "cc",
     "body": [
       "class $1 extends Component {",
+      "\tstate = {$2}",
       "\trender() { ",
-      "\t\treturn $0;",
+      "\t\treturn ( $0 )",
       "\t}",
       "}",
       " ",
@@ -34,13 +35,13 @@
   "Class Component With State": {
     "prefix": "ccc",
     "body": [
-      "class $1 extends Component {",
+      "export class $1 extends Component {",
       "\tconstructor(props) {",
       "\t\tsuper(props);",
       "\t\tthis.state = { $2 }",
       "\t}",
       "\trender() { ",
-      "\t\treturn $0",
+      "\t\treturn ( $0 )",
       "\t}",
       "}",
       " ",
