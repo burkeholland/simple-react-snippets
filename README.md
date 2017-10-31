@@ -157,6 +157,10 @@ render() {
 
 ## Release Notes
 
+### 1.0.7
+
+* Patch - Adding JSX support back.  Was accidentally removed
+
 ### 1.0.6
 
 * Add state prop to Component Class (`cc`)
