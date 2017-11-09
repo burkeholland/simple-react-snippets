@@ -2,9 +2,9 @@
   "name": "simple-react-snippets",
   "displayName": "Simple React Snippets",
   "description": "Dead simple React snippets you will actually use",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "publisher": "burkeholland",
-  "icon": "images/simple-react.png",
+  "icon": "images/react-logo.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/burkeholland/simple-react-snippets.git"
