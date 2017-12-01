@@ -1,5 +1,10 @@
 # Change Log
 
+## 1.0.9
+
+* Add Higher Order Component snippet. Resolves #7. Special thanks to
+  [Will Stone](https://github.com/will-stone).
+
 ## 1.0.8
 
 * Move changelog to CHANGELOG file
@@ -7,12 +12,13 @@
 
 ## 1.0.7
 
-* Patch - Adding JSX support back.  Was accidentally removed
+* Patch - Adding JSX support back. Was accidentally removed
 
 ## 1.0.6
 
 * Add state prop to Component Class (`cc`)
-* Wrap return from render in `()` by default for Component Class (`cc`) and Component Class Constructor (`ccc`)
+* Wrap return from render in `()` by default for Component Class (`cc`) and
+  Component Class Constructor (`ccc`)
 * Use pipes in README to better articulate tab stops
 
 ## 1.0.5

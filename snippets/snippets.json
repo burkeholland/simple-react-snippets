@@ -120,5 +120,23 @@
     "prefix": "ren",
     "body": ["render() {", "\treturn (", "\t\t $0", "\t)", "}"],
     "description": "render"
+  },
+
+  "Higher Order Component": {
+    "prefix": "hoc",
+    "body": [
+      "function $1($2) {",
+      "\treturn class extends Component {",
+      "\t\tconstructor(props) {",
+      "\t\t\tsuper(props);",
+      "\t\t}",
+      " ",
+      "\t\trender() {",
+      "\t\t\treturn <$2 {...this.props} $0/>",
+      "\t\t}",
+      "\t}",
+      "}"
+    ],
+    "description": "Higher Order Component"
   }
 }
