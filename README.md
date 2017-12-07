@@ -1,6 +1,6 @@
 # Simple React Snippets
 
-The essential collection of React Snippets.
+The essential collection of React Snippets and commands.
 
 ![snippets in action](images/snippets-in-action.gif)
 
@@ -190,6 +190,16 @@ function | (|) {
   };
 }
 ```
+
+## Commands
+
+### React: class to className
+
+Changes all occurences of `class` in JSX to `className`. This transform is safe
+to run multiple times on any document. No text needs to be selected as the
+command is executed on the entire document.
+
+![React: class to className](https://i.imgur.com/i1ZwvOu.gif)
 
 #### Thank You
 
