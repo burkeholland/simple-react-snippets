@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.1.0
+
+* 🔥 Adds "React: class to className" command to the command palette
+
 ## 1.0.9
 
 * Add Higher Order Component snippet. Resolves #7. Special thanks to

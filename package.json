@@ -2,7 +2,7 @@
   "name": "simple-react-snippets",
   "displayName": "Simple React Snippets",
   "description": "Dead simple React snippets you will actually use",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "publisher": "burkeholland",
   "icon": "images/react-logo.png",
   "repository": {
@@ -14,6 +14,8 @@
     "vscode": "^1.13.0"
   },
   "categories": ["Snippets"],
+  "activationEvents": ["onCommand:extension.stayClassy"],
+  "main": "./out/src/extension",
   "contributes": {
     "snippets": [
       {
@@ -24,6 +26,25 @@
         "language": "javascript",
         "path": "./snippets/snippets.json"
       }
+    ],
+    "commands": [
+      {
+        "command": "extension.stayClassy",
+        "title": "React: class to className"
+      }
     ]
+  },
+  "scripts": {
+    "vscode:prepublish": "tsc -p ./",
+    "compile": "tsc -watch -p ./",
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "node ./node_modules/vscode/bin/test"
+  },
+  "devDependencies": {
+    "typescript": "^2.0.3",
+    "vscode": "^1.0.0",
+    "mocha": "^2.3.3",
+    "@types/node": "^6.0.40",
+    "@types/mocha": "^2.2.32"
   }
 }
