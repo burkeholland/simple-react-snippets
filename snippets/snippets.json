@@ -31,7 +31,25 @@
     ],
     "description": "Class Component"
   },
-
+  "Typescript Class Component With State": {
+    "prefix": "cst",
+    "body": [
+      "interface $1Props{}",
+      "interface $1State{}",
+      "class vik extends Component<vikProps, vikState> {",
+      "\tconstructor(props) {",
+      "\t\tsuper(props);",
+      "\t\tthis.state = { $2 }",
+      "\t}",
+      "\trender() { ",
+      "\t\treturn $0",
+      "\t}",
+      "}",
+      " ",
+      "export default $1;"
+    ],
+    "description": "Typescript Class Component With State"
+  },
   "Class Component With State": {
     "prefix": "ccc",
     "body": [
