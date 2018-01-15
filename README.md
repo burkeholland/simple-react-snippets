@@ -69,7 +69,7 @@ class | extends Component {
 export default |;
 ```
 
-### ccc - Class Component With State
+### ccc - Class Component With Constructor
 
 ```javascript
 class | extends Component {
