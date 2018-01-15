@@ -35,7 +35,7 @@
   "Class Component With State": {
     "prefix": "ccc",
     "body": [
-      "export class $1 extends Component {",
+      "class $1 extends Component {",
       "\tconstructor(props) {",
       "\t\tsuper(props);",
       "\t\tthis.state = { $2 }",
