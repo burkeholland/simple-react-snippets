@@ -1,5 +1,10 @@
 # Change Log
 
+## 1.1.1
+
+* Resolves [duplicate export on Class Component With Constructor](https://github.com/burkeholland/simple-react-snippets/issues/9)
+* Minor (or Manor - [Elijah Manor](https://twitter.com/elijahmanor)) update to the README
+
 ## 1.1.0
 
 * 🔥 Adds "React: class to className" command to the command palette
