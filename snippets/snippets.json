@@ -21,9 +21,9 @@
     "prefix": "cc",
     "body": [
       "class $1 extends Component {",
-      "\tstate = {$2}",
+      "\tstate = { $2 }",
       "\trender() { ",
-      "\t\treturn ( $0 )",
+      "\t\treturn ( $0 );",
       "\t}",
       "}",
       " ",
@@ -32,7 +32,7 @@
     "description": "Class Component"
   },
 
-  "Class Component With State": {
+  "Class Component With Constructor": {
     "prefix": "ccc",
     "body": [
       "class $1 extends Component {",
@@ -41,20 +41,20 @@
       "\t\tthis.state = { $2 }",
       "\t}",
       "\trender() { ",
-      "\t\treturn ( $0 )",
+      "\t\treturn ( $0 );",
       "\t}",
       "}",
       " ",
       "export default $1;"
     ],
-    "description": "Class Component With State"
+    "description": "Class Component With Constructor"
   },
 
   "Stateless Function Component": {
     "prefix": "sfc",
     "body": [
       "const $1 = ($2) => {",
-      "\treturn $0",
+      "\treturn ( $0 );",
       "}",
       " ",
       "export default $1;"
@@ -118,7 +118,7 @@
 
   "render": {
     "prefix": "ren",
-    "body": ["render() {", "\treturn (", "\t\t $0", "\t)", "}"],
+    "body": ["render() {", "\treturn (", "\t\t $0", "\t);", "}"],
     "description": "render"
   },
 
