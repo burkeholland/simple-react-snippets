@@ -80,6 +80,12 @@
     "description": "componentWillReceiveProps"
   },
 
+  "getDerivedStateFromProps": {
+    "prefix": "gds",
+    "body": ["static getDerivedStateFromProps(nextProps, prevState) {", "\t$0", "}"],
+    "description": "getDerivedStateFromProps"
+  },
+
   "shouldComponentUpdate": {
     "prefix": "scu",
     "body": ["shouldComponentUpdate(nextProps, nextState) {", "\t$0", "}"],
@@ -114,6 +120,12 @@
     "prefix": "ss",
     "body": ["this.setState({ $1: $2 });"],
     "description": "setState"
+  },
+
+  "getSnapshotBeforeUpdate": {
+    "prefix": "gsbu",
+    "body": ["getSnapshotBeforeUpdate(prevProps, prevState) {", "\t$0", "}"],
+    "description": "getSnapshotBeforeUpdate"
   },
 
   "render": {
