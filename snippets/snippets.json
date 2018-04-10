@@ -122,6 +122,12 @@
     "description": "setState"
   },
 
+  "Functional setState": {
+    "prefix": "ssf",
+    "body": ["this.setState(prevState => {", "\treturn { $1: prevState.$1 };", "});"],
+    "description": "Functional setState"
+  },
+
   "getSnapshotBeforeUpdate": {
     "prefix": "gsbu",
     "body": ["getSnapshotBeforeUpdate(prevProps, prevState) {", "\t$0", "}"],
