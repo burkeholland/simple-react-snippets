@@ -70,13 +70,13 @@
 
   "componentWillMount": {
     "prefix": "cwm",
-    "body": ["//WARNING! Scheduled to be deprecated in React v17. Use componentDidMount instead.", "componentWillMount() {", "\t$0", "}"],
+    "body": ["//WARNING! To be deprecated in React v17. Use componentDidMount instead.", "componentWillMount() {", "\t$0", "}"],
     "description": "componentWillMount"
   },
 
   "componentWillReceiveProps": {
     "prefix": "cwrp",
-    "body": ["//WARNING! Scheduled to be deprecated in React v17. Use new lifecycle static getDerivedStateFromProps instead.", "componentWillReceiveProps(nextProps) {", "\t$0", "}"],
+    "body": ["//WARNING! To be deprecated in React v17. Use new lifecycle static getDerivedStateFromProps instead.", "componentWillReceiveProps(nextProps) {", "\t$0", "}"],
     "description": "componentWillReceiveProps"
   },
 
@@ -94,7 +94,7 @@
 
   "componentWillUpdate": {
     "prefix": "cwu",
-    "body": ["//WARNING! Scheduled to be deprecated in React v17. Use componentDidUpdate instead.", "componentWillUpdate(nextProps, nextState) {", "\t$0", "}"],
+    "body": ["//WARNING! To be deprecated in React v17. Use componentDidUpdate instead.", "componentWillUpdate(nextProps, nextState) {", "\t$0", "}"],
     "description": "componentWillUpdate"
   },
 
@@ -116,6 +116,12 @@
     "description": "componentDidCatch"
   },
 
+  "getSnapshotBeforeUpdate": {
+    "prefix": "gsbu",
+    "body": ["getSnapshotBeforeUpdate(prevProps, prevState) {", "\t$0", "}"],
+    "description": "getSnapshotBeforeUpdate"
+  },
+
   "setState": {
     "prefix": "ss",
     "body": ["this.setState({ $1: $2 });"],
@@ -128,12 +134,6 @@
     "description": "Functional setState"
   },
 
-  "getSnapshotBeforeUpdate": {
-    "prefix": "gsbu",
-    "body": ["getSnapshotBeforeUpdate(prevProps, prevState) {", "\t$0", "}"],
-    "description": "getSnapshotBeforeUpdate"
-  },
-
   "render": {
     "prefix": "ren",
     "body": ["render() {", "\treturn (", "\t\t $0", "\t);", "}"],
@@ -144,9 +144,11 @@
     "prefix": "rprop",
     "body": [
       "class $1 extends Component {",
-      "\tstate = { $2 }",
+      "\tstate = { $2: $3 }",
       "\trender() { ",
-      "\t\treturn this.props.render(this.state);",
+      "\t\treturn this.props.render({",
+      "\t\t\t$2: this.state.$2",
+      "\t\t});",
       "\t}",
       "}",
       " ",
