@@ -140,6 +140,21 @@
     "description": "render"
   },
 
+  "Render Prop": {
+    "prefix": "rprop",
+    "body": [
+      "class $1 extends Component {",
+      "\tstate = { $2 }",
+      "\trender() { ",
+      "\t\treturn this.props.render(this.state);",
+      "\t}",
+      "}",
+      " ",
+      "export default $1;"
+    ],
+    "description": "Render Prop"
+  },
+
   "Higher Order Component": {
     "prefix": "hoc",
     "body": [
