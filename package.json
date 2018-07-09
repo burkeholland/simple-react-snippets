@@ -25,6 +25,10 @@
       {
         "language": "javascript",
         "path": "./snippets/snippets.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/snippets-ts.json"
       }
     ],
     "commands": [
