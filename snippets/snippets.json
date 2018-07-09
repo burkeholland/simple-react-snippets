@@ -21,9 +21,9 @@
     "prefix": "cc",
     "body": [
       "class $1 extends Component {",
-      "\tstate = {$2}",
+      "\tstate = { $2 }",
       "\trender() { ",
-      "\t\treturn ( $0 )",
+      "\t\treturn ( $0 );",
       "\t}",
       "}",
       " ",
@@ -32,7 +32,7 @@
     "description": "Class Component"
   },
 
-  "Class Component With State": {
+  "Class Component With Constructor": {
     "prefix": "ccc",
     "body": [
       "class $1 extends Component {",
@@ -41,20 +41,20 @@
       "\t\tthis.state = { $2 }",
       "\t}",
       "\trender() { ",
-      "\t\treturn ( $0 )",
+      "\t\treturn ( $0 );",
       "\t}",
       "}",
       " ",
       "export default $1;"
     ],
-    "description": "Class Component With State"
+    "description": "Class Component With Constructor"
   },
 
   "Stateless Function Component": {
     "prefix": "sfc",
     "body": [
       "const $1 = ($2) => {",
-      "\treturn $0",
+      "\treturn ( $0 );",
       "}",
       " ",
       "export default $1;"
@@ -70,14 +70,20 @@
 
   "componentWillMount": {
     "prefix": "cwm",
-    "body": ["componentWillMount() {", "\t$0", "}"],
+    "body": ["//WARNING! To be deprecated in React v17. Use componentDidMount instead.", "componentWillMount() {", "\t$0", "}"],
     "description": "componentWillMount"
   },
 
   "componentWillReceiveProps": {
     "prefix": "cwrp",
-    "body": ["componentWillReceiveProps(nextProps) {", "\t$0", "}"],
+    "body": ["//WARNING! To be deprecated in React v17. Use new lifecycle static getDerivedStateFromProps instead.", "componentWillReceiveProps(nextProps) {", "\t$0", "}"],
     "description": "componentWillReceiveProps"
+  },
+
+  "getDerivedStateFromProps": {
+    "prefix": "gds",
+    "body": ["static getDerivedStateFromProps(nextProps, prevState) {", "\t$0", "}"],
+    "description": "getDerivedStateFromProps"
   },
 
   "shouldComponentUpdate": {
@@ -88,7 +94,7 @@
 
   "componentWillUpdate": {
     "prefix": "cwu",
-    "body": ["componentWillUpdate(nextProps, nextState) {", "\t$0", "}"],
+    "body": ["//WARNING! To be deprecated in React v17. Use componentDidUpdate instead.", "componentWillUpdate(nextProps, nextState) {", "\t$0", "}"],
     "description": "componentWillUpdate"
   },
 
@@ -110,16 +116,45 @@
     "description": "componentDidCatch"
   },
 
+  "getSnapshotBeforeUpdate": {
+    "prefix": "gsbu",
+    "body": ["getSnapshotBeforeUpdate(prevProps, prevState) {", "\t$0", "}"],
+    "description": "getSnapshotBeforeUpdate"
+  },
+
   "setState": {
     "prefix": "ss",
     "body": ["this.setState({ $1: $2 });"],
     "description": "setState"
   },
 
+  "Functional setState": {
+    "prefix": "ssf",
+    "body": ["this.setState(prevState => {", "\treturn { $1: prevState.$1 };", "});"],
+    "description": "Functional setState"
+  },
+
   "render": {
     "prefix": "ren",
-    "body": ["render() {", "\treturn (", "\t\t $0", "\t)", "}"],
+    "body": ["render() {", "\treturn (", "\t\t $0", "\t);", "}"],
     "description": "render"
+  },
+
+  "Render Prop": {
+    "prefix": "rprop",
+    "body": [
+      "class $1 extends Component {",
+      "\tstate = { $2: $3 }",
+      "\trender() { ",
+      "\t\treturn this.props.render({",
+      "\t\t\t$2: this.state.$2",
+      "\t\t});",
+      "\t}",
+      "}",
+      " ",
+      "export default $1;"
+    ],
+    "description": "Render Prop"
   },
 
   "Higher Order Component": {

@@ -27,13 +27,17 @@ that work the way that you would expect, not just a copy of the documentation.
 | `cdm`   | componentDidMount                |
 | `cwm`   | componentWillMount               |
 | `cwrp`  | componentWillReceiveProps        |
+| `gds`   | getDerivedStateFromProps         |
 | `scu`   | shouldComponentUpdate            |
 | `cwu`   | componentWillUpdate              |
 | `cdu`   | componentDidUpdate               |
 | `cwu`   | componentWillUpdate              |
 | `cdc`   | componentDidCatch                |
+| `gsbu`  | getSnapshotBeforeUpdate          |
 | `ss`    | setState                         |
+| `ssf`   | Functional setState              |
 | `ren`   | render                           |
+| `rprop` | Render Prop                      |
 | `hoc`   | Higher Order Component           |
 
 ## Full Expansions
@@ -106,6 +110,7 @@ componentDidMount() {
 ### cwm - componentWillMount
 
 ```javascript
+//WARNING! To be deprecated in React v17. Use componentDidMount instead.
 componentWillMount() {
   |
 }
@@ -114,7 +119,16 @@ componentWillMount() {
 ### cwrp - componentWillReceiveProps
 
 ```javascript
+//WARNING! To be deprecated in React v17. Use new lifecycle static getDerivedStateFromProps instead.
 componentWillReceiveProps(nextProps) {
+  |
+}
+```
+
+### gds - getDerivedStateFromProps
+
+```javascript
+static getDerivedStateFromProps(nextProps, prevStat) {
   |
 }
 ```
@@ -130,6 +144,7 @@ shouldComponentUpdate(nextProps, nextState) {
 ### cwu - componentWillUpdate
 
 ```javascript
+//WARNING! To be deprecated in React v17. Use componentDidUpdate instead.
 componentWillUpdate(nextProps, nextState) {
   |
 }
@@ -159,10 +174,26 @@ componentDidCatch(error, info) {
 }
 ```
 
+### gsbu - getSnapshotBeforeUpdate
+
+```javascript
+getSnapshotBeforeUpdate(prevProps, prevState) {
+  |
+}
+```
+
 ### ss - setState
 
 ```javascript
 this.setState({ | : | });
+```
+
+### ssf - Functional setState
+
+```javascript
+this.setState(prevState => {
+  return { | : prevState.| }
+});
 ```
 
 ### ren - render
@@ -171,8 +202,23 @@ this.setState({ | : | });
 render() {
   return (
     |
-  )
+  );
 }
+```
+
+### rprop - Render Prop
+
+```javascript
+class | extends Component {
+  state = { | },
+  render() {
+    return this.props.render({
+      |: this.state.|
+    });
+  }
+}
+
+export default |;
 ```
 
 ### hoc - Higher Order Component
