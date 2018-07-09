@@ -1,157 +1,182 @@
 {
-    "Import React": {
-      "prefix": "imr",
-      "body": ["import * as React from 'react';"],
-      "description": "Import React"
-    },
-  
-    "Import React and Component": {
-      "prefix": "imrc",
-      "body": [
-        "import * as React from 'react';",
-        "import { Component } from 'react';"
-       ],
-      "description": "Import React, { Component }"
-    },
-  
-    "Class Component": {
-      "prefix": "cc",
-      "body": [
-        "export interface $1Props {",
-        "\t$2",
-        "}",
-        " ",
-        "export interface $1State {",
-        "\t$3",
-        "}",
-        " ",
-        "class $1 extends React.Component<$1Props, $1State> {",
-        "\tstate = { $4: $5 }",
-        "\trender() { ",
-        "\t\treturn ( $0 );",
-        "\t}",
-        "}",
-        " ",
-        "export default $1;"
-      ],
-      "description": "Class Component"
-    },
-  
-    "Stateless Function Component": {
-      "prefix": "sfc",
-      "body": [
-        "export interface $1Props {",
-        "\t$2",
-        "}",
-        " ",
-        "const $1: React.SFC<$1Props> = ($3) => {",
-        "\treturn ( $0 );",
-        "}",
-        " ",
-        "export default $1;"
-      ],
-      "description": "Stateless Function Component"
-    },
-  
-    "componentDidMount": {
-      "prefix": "cdm",
-      "body": ["componentDidMount() {", "\t$0", "}"],
-      "description": "componentDidMount"
-    },
-  
-    "componentWillMount": {
-      "prefix": "cwm",
-      "body": ["//WARNING! To be deprecated in React v17. Use componentDidMount instead.", "componentWillMount() {", "\t$0", "}"],
-      "description": "componentWillMount"
-    },
-  
-    "componentWillReceiveProps": {
-      "prefix": "cwrp",
-      "body": ["//WARNING! To be deprecated in React v17. Use new lifecycle static getDerivedStateFromProps instead.", "componentWillReceiveProps(nextProps: $1Props) {", "\t$0", "}"],
-      "description": "componentWillReceiveProps"
-    },
-  
-    "getDerivedStateFromProps": {
-      "prefix": "gds",
-      "body": ["static getDerivedStateFromProps(nextProps: $1Props, prevState: $1State) {", "\t$0", "}"],
-      "description": "getDerivedStateFromProps"
-    },
-  
-    "shouldComponentUpdate": {
-      "prefix": "scu",
-      "body": ["shouldComponentUpdate(nextProps: $1Props, nextState: $1State) {", "\t$0", "}"],
-      "description": "shouldComponentUpdate"
-    },
-  
-    "componentWillUpdate": {
-      "prefix": "cwu",
-      "body": ["//WARNING! To be deprecated in React v17. Use componentDidUpdate instead.", "componentWillUpdate(nextProps: $1Props, nextState: $1State) {", "\t$0", "}"],
-      "description": "componentWillUpdate"
-    },
-  
-    "componentDidUpdate": {
-      "prefix": "cdu",
-      "body": ["componentDidUpdate(prevProps: $1Props, prevState: $1State) {", "\t$0", "}"],
-      "description": "componentDidUpdate"
-    },
-  
-    "componentWillUnmount": {
-      "prefix": "cwun",
-      "body": ["componentWillUnmount() {", "\t$0", "}"],
-      "description": "componentWillUnmount"
-    },
-  
-    "componentDidCatch": {
-      "prefix": "cdc",
-      "body": ["componentDidCatch(error, info) {", "\t$0", "}"],
-      "description": "componentDidCatch"
-    },
-  
-    "getSnapshotBeforeUpdate": {
-      "prefix": "gsbu",
-      "body": ["getSnapshotBeforeUpdate(prevProps: $1Props, prevState: $1State) {", "\t$0", "}"],
-      "description": "getSnapshotBeforeUpdate"
-    },
-  
-    "setState": {
-      "prefix": "ss",
-      "body": ["this.setState({ $1: $2 });"],
-      "description": "setState"
-    },
-  
-    "Functional setState": {
-      "prefix": "ssf",
-      "body": ["this.setState(prevState => {", "\treturn { $1: prevState.$1 };", "});"],
-      "description": "Functional setState"
-    },
-  
-    "render": {
-      "prefix": "ren",
-      "body": ["render() {", "\treturn (", "\t\t $0", "\t);", "}"],
-      "description": "render"
-    },
-  
-    "Render Prop": {
-      "prefix": "rprop",
-      "body": [
-        "export interface $1Props {",
-        "\trender: (state: $1State) => JSX.Element",
-        "}",
-        " ",
-        "export interface $1State {",
-        "\t$2",
-        "}",
-        " ",
-        "class $1 extends React.Component<$1Props, $1State> {",
-        "\tstate = { $3: $4 }",
-        "\trender() { ",
-        "\t\treturn this.props.render(this.state);",
-        "\t}",
-        "}",
-        " ",
-        "export default $1;"
-      ],
-      "description": "Render Prop"
-    }
+  "Import React": {
+    "prefix": "imr",
+    "body": ["import * as React from 'react';"],
+    "description": "Import React"
+  },
+
+  "Import React and Component": {
+    "prefix": "imrc",
+    "body": [
+      "import * as React from 'react';",
+      "import { Component } from 'react';"
+    ],
+    "description": "Import React, { Component }"
+  },
+
+  "Class Component": {
+    "prefix": "cc",
+    "body": [
+      "export interface $1Props {",
+      "\t$2",
+      "}",
+      " ",
+      "export interface $1State {",
+      "\t$3",
+      "}",
+      " ",
+      "class $1 extends React.Component<$1Props, $1State> {",
+      "\tstate = { $4: $5 }",
+      "\trender() { ",
+      "\t\treturn ( $0 );",
+      "\t}",
+      "}",
+      " ",
+      "export default $1;"
+    ],
+    "description": "Class Component"
+  },
+
+  "Class Component Constructor": {
+    "prefix": "ccc",
+    "body": [
+      "export interface $1Props {",
+      "\t$2",
+      "}",
+      " ",
+      "export interface $1State {",
+      "\t$3",
+      "}",
+      " ",
+      "class $1 extends React.Component<$1Props, $1State> {",
+      "\tconstructor(props: $1Props) {",
+      "\t\tsuper(props);",
+      "\t\tthis.state = { $4: $5 };",
+      "\t}",
+      "\trender() { ",
+      "\t\treturn ( $0 );",
+      "\t}",
+      "}",
+      " ",
+      "export default $1;"
+    ],
+    "description": "Class Component with Constructor"
+  },
+
+  "Stateless Function Component": {
+    "prefix": "sfc",
+    "body": [
+      "export interface $1Props {",
+      "\t$2",
+      "}",
+      " ",
+      "const $1: React.SFC<$1Props> = ($3) => {",
+      "\treturn ( $0 );",
+      "}",
+      " ",
+      "export default $1;"
+    ],
+    "description": "Stateless Function Component"
+  },
+
+  "componentDidMount": {
+    "prefix": "cdm",
+    "body": ["componentDidMount() {", "\t$0", "}"],
+    "description": "componentDidMount"
+  },
+
+  "componentWillMount": {
+    "prefix": "cwm",
+    "body": ["//WARNING! To be deprecated in React v17. Use componentDidMount instead.", "componentWillMount() {", "\t$0", "}"],
+    "description": "componentWillMount"
+  },
+
+  "componentWillReceiveProps": {
+    "prefix": "cwrp",
+    "body": ["//WARNING! To be deprecated in React v17. Use new lifecycle static getDerivedStateFromProps instead.", "componentWillReceiveProps(nextProps: $1Props) {", "\t$0", "}"],
+    "description": "componentWillReceiveProps"
+  },
+
+  "getDerivedStateFromProps": {
+    "prefix": "gds",
+    "body": ["static getDerivedStateFromProps(nextProps: $1Props, prevState: $1State) {", "\t$0", "}"],
+    "description": "getDerivedStateFromProps"
+  },
+
+  "shouldComponentUpdate": {
+    "prefix": "scu",
+    "body": ["shouldComponentUpdate(nextProps: $1Props, nextState: $1State) {", "\t$0", "}"],
+    "description": "shouldComponentUpdate"
+  },
+
+  "componentWillUpdate": {
+    "prefix": "cwu",
+    "body": ["//WARNING! To be deprecated in React v17. Use componentDidUpdate instead.", "componentWillUpdate(nextProps: $1Props, nextState: $1State) {", "\t$0", "}"],
+    "description": "componentWillUpdate"
+  },
+
+  "componentDidUpdate": {
+    "prefix": "cdu",
+    "body": ["componentDidUpdate(prevProps: $1Props, prevState: $1State) {", "\t$0", "}"],
+    "description": "componentDidUpdate"
+  },
+
+  "componentWillUnmount": {
+    "prefix": "cwun",
+    "body": ["componentWillUnmount() {", "\t$0", "}"],
+    "description": "componentWillUnmount"
+  },
+
+  "componentDidCatch": {
+    "prefix": "cdc",
+    "body": ["componentDidCatch(error, info) {", "\t$0", "}"],
+    "description": "componentDidCatch"
+  },
+
+  "getSnapshotBeforeUpdate": {
+    "prefix": "gsbu",
+    "body": ["getSnapshotBeforeUpdate(prevProps: $1Props, prevState: $1State) {", "\t$0", "}"],
+    "description": "getSnapshotBeforeUpdate"
+  },
+
+  "setState": {
+    "prefix": "ss",
+    "body": ["this.setState({ $1: $2 });"],
+    "description": "setState"
+  },
+
+  "Functional setState": {
+    "prefix": "ssf",
+    "body": ["this.setState(prevState => {", "\treturn { $1: prevState.$1 };", "});"],
+    "description": "Functional setState"
+  },
+
+  "render": {
+    "prefix": "ren",
+    "body": ["render() {", "\treturn (", "\t\t $0", "\t);", "}"],
+    "description": "render"
+  },
+
+  "Render Prop": {
+    "prefix": "rprop",
+    "body": [
+      "export interface $1Props {",
+      "\trender: (state: $1State) => JSX.Element",
+      "}",
+      " ",
+      "export interface $1State {",
+      "\t$2",
+      "}",
+      " ",
+      "class $1 extends React.Component<$1Props, $1State> {",
+      "\tstate = { $3: $4 }",
+      "\trender() { ",
+      "\t\treturn this.props.render(this.state);",
+      "\t}",
+      "}",
+      " ",
+      "export default $1;"
+    ],
+    "description": "Render Prop"
   }
-  
+}
