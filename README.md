@@ -247,11 +247,12 @@ command is executed on the entire document.
 
 ![React: class to className](https://i.imgur.com/i1ZwvOu.gif)
 
-#### Thank You
+## Thank You! ❤️
 
 Special thanks to the following individuals who have helped with this project in
 some way.
 
-* [@dan_abramov](https://twitter.com/dan_abramov)
-* [@adiun](https://twitter.com/adiun)
-* [@will-stone](https://github.com/will-stone)
+- [@dan_abramov](https://twitter.com/dan_abramov)
+- [@adiun](https://twitter.com/adiun)
+- [@will-stone](https://github.com/will-stone)
+- [@blurbye](https://github.com/blurbyte)
