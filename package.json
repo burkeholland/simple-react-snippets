@@ -2,7 +2,7 @@
   "name": "simple-react-snippets",
   "displayName": "Simple React Snippets",
   "description": "Dead simple React snippets you will actually use",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "publisher": "burkeholland",
   "icon": "images/react-logo.png",
   "repository": {
@@ -27,6 +27,10 @@
       },
       {
         "language": "typescriptreact",
+        "path": "./snippets/snippets-ts.json"
+      },
+      {
+        "language": "typescript",
         "path": "./snippets/snippets-ts.json"
       }
     ],
