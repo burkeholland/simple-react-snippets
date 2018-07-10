@@ -21,6 +21,7 @@ that work the way that you would expect, not just a copy of the documentation.
 | `imr`   | Import React                     |
 | `imrc`  | Import React / Component         |
 | `impt`  | Import PropTypes                 |
+| `impc`  | Import React / PureComponent     |
 | `cc`    | Class Component                  |
 | `ccc`   | Class Component With Constructor |
 | `sfc`   | Stateless Function Component     |
@@ -58,6 +59,12 @@ import React, { Component } from 'react';
 
 ```javascript
 import PropTypes from 'prop-types';
+```
+
+### impc - Import PureComponent
+
+```javascript
+import React, { PureComponent } from 'react';
 ```
 
 ### cc - Class Component

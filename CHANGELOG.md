@@ -1,5 +1,10 @@
 # Change Log
 
+## 1.2.2
+
+- Add PureComponent Snippet
+- Add mapping for pure TS files
+
 ## 1.2.1
 
 - Add "Class Component With Constructor" to TS snippets
