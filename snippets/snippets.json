@@ -17,6 +17,12 @@
     "description": "Import PropTypes"
   },
 
+  "Import Pure Component": {
+    "prefix": "impc",
+    "body": ["import React, { PureComponent } from 'react';"],
+    "description": "Import React, { PureComponent }"
+  },
+
   "Class Component": {
     "prefix": "cc",
     "body": [
