@@ -135,7 +135,7 @@ componentWillReceiveProps(nextProps) {
 ### gds - getDerivedStateFromProps
 
 ```javascript
-static getDerivedStateFromProps(nextProps, prevStat) {
+static getDerivedStateFromProps(nextProps, prevState) {
   |
 }
 ```
