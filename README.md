@@ -26,6 +26,7 @@ that work the way that you would expect, not just a copy of the documentation.
 | `impc`  | Import React / PureComponent     |
 | `cc`    | Class Component                  |
 | `ccc`   | Class Component With Constructor |
+| `cpc`   | Class Pure Component             |
 | `sfc`   | Stateless Function Component     |
 | `cdm`   | componentDidMount                |
 | `uef`   | useEffect Hook                   |
@@ -103,6 +104,19 @@ class | extends Component {
     super(props);
     this.state = { | };
   }
+  render() {
+    return ( | );
+  }
+}
+
+export default |;
+```
+
+### ccc - Class Component With Constructor
+
+```javascript
+class | extends PureComponent {
+  state = { | },
   render() {
     return ( | );
   }
@@ -293,3 +307,4 @@ some way.
 - [@adiun](https://twitter.com/adiun)
 - [@will-stone](https://github.com/will-stone)
 - [@blurbye](https://github.com/blurbyte)
+- [@rbtprograms](https://github.com/rbtprograms)
