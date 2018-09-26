@@ -38,6 +38,21 @@
     "description": "Class Component"
   },
 
+  "Class Pure Component": {
+    "prefix": "cpc",
+    "body": [
+      "class $1 extends PureComponent {",
+      "\tstate = { $2 }",
+      "\trender() { ",
+      "\t\treturn ( $0 );",
+      "\t}",
+      "}",
+      " ",
+      "export default $1;"
+    ],
+    "description": "Class Pure Component"
+  },
+
   "Class Component With Constructor": {
     "prefix": "ccc",
     "body": [
