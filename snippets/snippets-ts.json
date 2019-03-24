@@ -23,11 +23,11 @@
   "Class Component": {
     "prefix": "cc",
     "body": [
-      "export interface $1Props {",
+      "interface $1Props {",
       "\t$2",
       "}",
       " ",
-      "export interface $1State {",
+      "interface $1State {",
       "\t$3",
       "}",
       " ",
@@ -46,11 +46,11 @@
   "Class Component Constructor": {
     "prefix": "ccc",
     "body": [
-      "export interface $1Props {",
+      "interface $1Props {",
       "\t$2",
       "}",
       " ",
-      "export interface $1State {",
+      "interface $1State {",
       "\t$3",
       "}",
       " ",
@@ -72,7 +72,7 @@
   "Stateless Function Component": {
     "prefix": "sfc",
     "body": [
-      "export interface $1Props {",
+      "interface $1Props {",
       "\t$2",
       "}",
       " ",
@@ -166,11 +166,11 @@
   "Render Prop": {
     "prefix": "rprop",
     "body": [
-      "export interface $1Props {",
+      "interface $1Props {",
       "\trender: (state: $1State) => JSX.Element",
       "}",
       " ",
-      "export interface $1State {",
+      "interface $1State {",
       "\t$2",
       "}",
       " ",
