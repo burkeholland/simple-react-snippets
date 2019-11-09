@@ -76,7 +76,7 @@
       "\t$2",
       "}",
       " ",
-      "const $1: React.SFC<$1Props> = ($3) => {",
+      "const $1: React.FC<$1Props> = ($3) => {",
       "\treturn ( $0 );",
       "}",
       " ",
