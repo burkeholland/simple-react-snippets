@@ -14,6 +14,24 @@
     "description": "Import React, { Component }"
   },
 
+  "Import React, { useState }": {
+    "prefix": "imrs",
+    "body": [
+      "import * as React from 'react';",
+      "import { useState } from 'react';"
+    ],
+    "description": "Import React, { useState }"
+  },
+
+  "Import React, { useState, useEffect }": {
+    "prefix": "imrse",
+    "body": [
+      "import * as React from 'react';",
+      "import { useState, useEffect } from 'react';"
+    ],
+    "description": "Import React, { useState, useEffect }"
+  },
+
   "Import Pure Component": {
     "prefix": "impc",
     "body": ["import React, { PureComponent } from 'react';"],
@@ -91,6 +109,16 @@
     "description": "componentDidMount"
   },
 
+  "useEffect": {
+    "prefix": "uef",
+    "body": [
+      "useEffect(() => {",
+      "\t$1",
+      "}, []);"
+    ],
+    "description": "useEffect Hook"
+  },
+
   "componentWillMount": {
     "prefix": "cwm",
     "body": ["//WARNING! To be deprecated in React v17. Use componentDidMount instead.", "componentWillMount() {", "\t$0", "}"],
@@ -155,6 +183,14 @@
     "prefix": "ssf",
     "body": ["this.setState(prevState => {", "\treturn { $1: prevState.$1 };", "});"],
     "description": "Functional setState"
+  },
+
+  "Declare a new state variable using State Hook": {
+    "prefix": "usf",
+    "body": [
+      "const [${1}, set${1/(.*)/${1:/capitalize}/}] = useState($2);"
+    ],
+    "description": "Declare a new state Variable using the State Hook. Hit Tab to apply CamelCase to function"
   },
 
   "render": {
