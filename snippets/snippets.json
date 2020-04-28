@@ -1,20 +1,20 @@
 {
   "Import React": {
     "prefix": "imr",
-    "body": ["import React from 'react';"],
+    "body": ["import React from 'react';\n"],
     "description": "Import React"
   },
 
   "Import React, { Component }": {
     "prefix": "imrc",
-    "body": ["import React, { Component } from 'react';"],
+    "body": ["import React, { Component } from 'react';\n"],
     "description": "Import React, { Component }"
   },
 
   "Import React, { useState }": {
     "prefix": "imrs",
     "body": [
-      "import React, { useState } from 'react';"
+      "import React, { useState } from 'react';\n"
     ],
     "description": "Import React, { useState }"
   },
@@ -22,7 +22,7 @@
   "Import React, { useState, useEffect }": {
     "prefix": "imrse",
     "body": [
-      "import React, { useState, useEffect } from 'react';"
+      "import React, { useState, useEffect } from 'react';\n"
     ],
     "description": "Import React, { useState, useEffect }"
   },
@@ -35,7 +35,7 @@
 
   "Import Pure Component": {
     "prefix": "impc",
-    "body": ["import React, { PureComponent } from 'react';"],
+    "body": ["import React, { PureComponent } from 'react';\n"],
     "description": "Import React, { PureComponent }"
   },
 
