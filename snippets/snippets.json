@@ -211,5 +211,31 @@
       "}"
     ],
     "description": "Higher Order Component"
+  },
+
+  "Context Provider": {
+    "prefix": "cp",
+    "body": [
+      "export const $1 = React.createContext();",
+      "",
+      "const $1Provider = (props) => {",
+      "\t// Initial Provider State",
+      "\tconst initialState = {};",
+      "",
+      "\t// Reducer Function",
+      "\tconst $2 = () => {",
+      "\t\t",
+      "\t}",
+      "",
+      "\treturn (",
+      "\t\t<$1.Provider value={{...initialState, $2}}>",
+      "\t\t\t{props.children}",
+      "\t\t</$1.Provider>",
+      "\t);",
+      "}",
+      "",
+      "export default $1Provider;"
+    ],
+    "description": "Context Provider"
   }
 }
