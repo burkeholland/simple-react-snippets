@@ -112,7 +112,7 @@ class | extends Component {
 export default |;
 ```
 
-### ccc - Class Component With Constructor
+### cpc - Class Pure Component
 
 ```javascript
 class | extends PureComponent {
