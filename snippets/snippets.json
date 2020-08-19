@@ -1,20 +1,24 @@
 {
   "Import React": {
     "prefix": "imr",
-    "body": ["import React from 'react';"],
+    "body": ["import * as React from 'react';"],
     "description": "Import React"
   },
 
-  "Import React, { Component }": {
+  "Import React and Component": {
     "prefix": "imrc",
-    "body": ["import React, { Component } from 'react';"],
+    "body": [
+      "import * as React from 'react';",
+      "import { Component } from 'react';"
+    ],
     "description": "Import React, { Component }"
   },
 
   "Import React, { useState }": {
     "prefix": "imrs",
     "body": [
-      "import React, { useState } from 'react';"
+      "import * as React from 'react';",
+      "import { useState } from 'react';"
     ],
     "description": "Import React, { useState }"
   },
@@ -22,7 +26,8 @@
   "Import React, { useState, useEffect }": {
     "prefix": "imrse",
     "body": [
-      "import React, { useState, useEffect } from 'react';"
+      "import * as React from 'react';",
+      "import { useState, useEffect } from 'react';"
     ],
     "description": "Import React, { useState, useEffect }"
   },
@@ -35,7 +40,10 @@
 
   "Import Pure Component": {
     "prefix": "impc",
-    "body": ["import React, { PureComponent } from 'react';"],
+    "body": [
+      "import * as React from 'react';",
+      "import { PureComponent } from 'react';"
+    ],
     "description": "Import React, { PureComponent }"
   },
 
