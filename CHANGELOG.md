@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.2.3
+
+- Add PureComponent class snippet thanks to [@rbtprograms](https://github.com/rbtprograms)
+
 ## 1.2.2
 
 - Add PureComponent Snippet

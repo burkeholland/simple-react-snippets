@@ -2,22 +2,31 @@
   "name": "simple-react-snippets",
   "displayName": "Simple React Snippets",
   "description": "Dead simple React snippets you will actually use",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "publisher": "burkeholland",
   "icon": "images/react-logo.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/burkeholland/simple-react-snippets.git"
   },
-  "keywords": ["React", "React JS", "React Snippets"],
+  "keywords": [
+    "React",
+    "React JS",
+    "React Snippets"
+  ],
   "engines": {
     "vscode": "^1.13.0"
   },
-  "categories": ["Snippets"],
-  "activationEvents": ["onCommand:extension.stayClassy"],
+  "categories": [
+    "Snippets"
+  ],
+  "activationEvents": [
+    "onCommand:extension.stayClassy"
+  ],
   "main": "./out/src/extension",
   "contributes": {
-    "snippets": [{
+    "snippets": [
+      {
         "language": "javascriptreact",
         "path": "./snippets/snippets.json"
       },
@@ -34,10 +43,12 @@
         "path": "./snippets/snippets-ts.json"
       }
     ],
-    "commands": [{
-      "command": "extension.stayClassy",
-      "title": "React: class to className"
-    }]
+    "commands": [
+      {
+        "command": "extension.stayClassy",
+        "title": "React: class to className"
+      }
+    ]
   },
   "scripts": {
     "vscode:prepublish": "tsc -p ./",
@@ -46,10 +57,10 @@
     "test": "node ./node_modules/vscode/bin/test"
   },
   "devDependencies": {
-    "typescript": "^2.0.3",
-    "vscode": "^1.0.0",
-    "mocha": "^2.3.3",
+    "@types/mocha": "^2.2.32",
     "@types/node": "^6.0.40",
-    "@types/mocha": "^2.2.32"
+    "mocha": "^8.0.1",
+    "typescript": "^2.0.3",
+    "vscode": "^1.0.0"
   }
 }

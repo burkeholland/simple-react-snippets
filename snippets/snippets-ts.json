@@ -34,7 +34,10 @@
 
   "Import Pure Component": {
     "prefix": "impc",
-    "body": ["import React, { PureComponent } from 'react';"],
+    "body": [
+      "import * as React from 'react';",
+      "import { PureComponent } from 'react';"
+    ],
     "description": "Import React, { PureComponent }"
   },
 
@@ -59,6 +62,29 @@
       "export default $1;"
     ],
     "description": "Class Component"
+  },
+
+  "Class Pure Component": {
+    "prefix": "cpc",
+    "body": [
+      "export interface $1Props {",
+      "\t$2",
+      "}",
+      " ",
+      "export interface $1State {",
+      "\t$3",
+      "}",
+      " ",
+      "class $1 extends React.PureComponent<$1Props, $1State> {",
+      "\tstate = { $4: $5 }",
+      "\trender() { ",
+      "\t\treturn ( $0 );",
+      "\t}",
+      "}",
+      " ",
+      "export default $1;"
+    ],
+    "description": "Class Pure Component"
   },
 
   "Class Component Constructor": {
@@ -103,6 +129,18 @@
     "description": "Function Component"
   },
 
+  "Function Syntax Component": {
+    "prefix": "ffc",
+    "body": [
+      "function $1($2) {",
+      "\treturn ( $0 );",
+      "}",
+      "",
+      "export default $1;"
+    ],
+    "description": "Function Syntax Component"
+  },
+  
   "componentDidMount": {
     "prefix": "cdm",
     "body": ["componentDidMount() {", "\t$0", "}"],

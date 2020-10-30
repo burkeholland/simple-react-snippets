@@ -1,20 +1,24 @@
 {
   "Import React": {
     "prefix": "imr",
-    "body": ["import React from 'react';"],
+    "body": ["import * as React from 'react';"],
     "description": "Import React"
   },
 
-  "Import React, { Component }": {
+  "Import React and Component": {
     "prefix": "imrc",
-    "body": ["import React, { Component } from 'react';"],
+    "body": [
+      "import * as React from 'react';",
+      "import { Component } from 'react';"
+    ],
     "description": "Import React, { Component }"
   },
 
   "Import React, { useState }": {
     "prefix": "imrs",
     "body": [
-      "import React, { useState } from 'react';"
+      "import * as React from 'react';",
+      "import { useState } from 'react';"
     ],
     "description": "Import React, { useState }"
   },
@@ -22,7 +26,8 @@
   "Import React, { useState, useEffect }": {
     "prefix": "imrse",
     "body": [
-      "import React, { useState, useEffect } from 'react';"
+      "import * as React from 'react';",
+      "import { useState, useEffect } from 'react';"
     ],
     "description": "Import React, { useState, useEffect }"
   },
@@ -35,7 +40,10 @@
 
   "Import Pure Component": {
     "prefix": "impc",
-    "body": ["import React, { PureComponent } from 'react';"],
+    "body": [
+      "import * as React from 'react';",
+      "import { PureComponent } from 'react';"
+    ],
     "description": "Import React, { PureComponent }"
   },
 
@@ -52,6 +60,21 @@
       "export default $1;"
     ],
     "description": "Class Component"
+  },
+
+  "Class Pure Component": {
+    "prefix": "cpc",
+    "body": [
+      "class $1 extends PureComponent {",
+      "\tstate = { $2 }",
+      "\trender() { ",
+      "\t\treturn ( $0 );",
+      "\t}",
+      "}",
+      " ",
+      "export default $1;"
+    ],
+    "description": "Class Pure Component"
   },
 
   "Class Component With Constructor": {
@@ -84,6 +107,18 @@
     "description": "Stateless Function Component"
   },
 
+  "Function Syntax Component": {
+    "prefix": "ffc",
+    "body": [
+      "function $1($2) {",
+      "\treturn ( $0 );",
+      "}",
+      "",
+      "export default $1;"
+    ],
+    "description": "Function Syntax Component"
+  },
+  
   "componentDidMount": {
     "prefix": "cdm",
     "body": ["componentDidMount() {", "\t$0", "}"],
@@ -211,5 +246,31 @@
       "}"
     ],
     "description": "Higher Order Component"
+  },
+
+  "Context Provider": {
+    "prefix": "cp",
+    "body": [
+      "export const $1 = React.createContext();",
+      "",
+      "const $1Provider = (props) => {",
+      "\t// Initial Provider State",
+      "\tconst state = {};",
+      "",
+      "\t// Reducer Function",
+      "\tconst $2 = (state, action) => {",
+      "\t\t",
+      "\t};",
+      "",
+      "\treturn (",
+      "\t\t<$1.Provider value={{state: state, $2}}>",
+      "\t\t\t{props.children}",
+      "\t\t</$1.Provider>",
+      "\t);",
+      "}",
+      "",
+      "export default $1Provider;"
+    ],
+    "description": "Context Provider"
   }
 }
