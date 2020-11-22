@@ -21,13 +21,13 @@ that work the way that you would expect, not just a copy of the documentation.
 | `imr`   | Import React                     |
 | `imrc`  | Import React / Component         |
 | `imrs`  | Import React / useState          |
-| `imrse` | Import React / useState useEffect |
+| `imrse` | Import React / useState useEffect|
 | `impt`  | Import PropTypes                 |
 | `impc`  | Import React / PureComponent     |
 | `cc`    | Class Component                  |
 | `ccc`   | Class Component With Constructor |
 | `cpc`   | Class Pure Component             |
-| `sfc`   | Stateless Function Component     |
+| `fc`    | Function Component               |
 | `cdm`   | componentDidMount                |
 | `uef`   | useEffect Hook                   |
 | `cwm`   | componentWillMount               |
@@ -130,7 +130,7 @@ class | extends PureComponent {
 export default |;
 ```
 
-### sfc - Stateless Function Component
+### fc - Function Component
 
 ```javascript
 const | = props => {
