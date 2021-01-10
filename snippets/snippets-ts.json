@@ -69,7 +69,7 @@
     "description": "Class Component with Constructor"
   },
 
-  "Stateless Function Component": {
+  "Function Component": {
     "prefix": "sfc",
     "body": [
       "export interface $1Props {",
@@ -82,7 +82,7 @@
       " ",
       "export default $1;"
     ],
-    "description": "Stateless Function Component"
+    "description": "Function Component"
   },
 
   "componentDidMount": {
