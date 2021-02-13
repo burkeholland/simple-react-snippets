@@ -20,6 +20,7 @@ that work the way that you would expect, not just a copy of the documentation.
 | ------- | -------------------------------- |
 | `imr`   | Import React                     |
 | `imrc`  | Import React / Component         |
+| `imrd`  | Import ReactDOM                  |
 | `imrs`  | Import React / useState          |
 | `imrse` | Import React / useState useEffect |
 | `impt`  | Import PropTypes                 |
@@ -59,6 +60,12 @@ import * as React from 'react';
 ```javascript
 import * as React from 'react';
 import { Component } from 'react';
+```
+
+### imrd - Import ReactDOM
+
+```javascript
+import ReactDOM from 'react-dom';
 ```
 
 ### imrs - Import React, useState
