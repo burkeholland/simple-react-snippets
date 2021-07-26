@@ -24,10 +24,10 @@ that work the way that you would expect, not just a copy of the documentation.
 | `imrse` | Import React / useState useEffect |
 | `impt`  | Import PropTypes                 |
 | `impc`  | Import React / PureComponent     |
-| `cc`    | Class Component                  |
+| `rcc`    | Class Component                  |
 | `ccc`   | Class Component With Constructor |
 | `cpc`   | Class Pure Component             |
-| `sfc`   | Stateless Function Component     |
+| `rfc`   | Stateless Function Component     |
 | `cdm`   | componentDidMount                |
 | `uef`   | useEffect Hook                   |
 | `cwm`   | componentWillMount               |
@@ -88,7 +88,7 @@ import * as React from 'react';
 import { PureComponent } from 'react';
 ```
 
-### cc - Class Component
+### rcc - Class Component
 
 ```javascript
 class | extends Component {
@@ -130,7 +130,7 @@ class | extends PureComponent {
 export default |;
 ```
 
-### sfc - Stateless Function Component
+### rfc - Stateless Function Component
 
 ```javascript
 const | = props => {
