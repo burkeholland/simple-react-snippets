@@ -91,10 +91,9 @@ import { PureComponent } from 'react';
 ### cc - Class Component
 
 ```javascript
-class | extends Component {
-  state = { | },
+class | extends React.Component {
   render() {
-    return ( | );
+    return <div>|</div>
   }
 }
 
@@ -291,6 +290,14 @@ function | (|) {
     }
   };
 }
+```
+
+### cpf - Class Property Function
+
+```javascript
+  | = (e) => {
+    |
+  }
 ```
 
 ## Commands
