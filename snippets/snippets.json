@@ -11,6 +11,12 @@
     "description": "Import React, { Component }"
   },
 
+  "Import ReactDOM": {
+    "prefix": "imrd",
+    "body": ["import ReactDOM from 'react-dom';"],
+    "description": "Import ReactDOM"
+  },
+
   "Import React, { useState }": {
     "prefix": "imrs",
     "body": [
