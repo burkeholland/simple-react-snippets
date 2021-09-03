@@ -51,24 +51,28 @@ that work the way that you would expect, not just a copy of the documentation.
 ### imr - Import React
 
 ```javascript
-import React from 'react';
+import * as React from 'react';
 ```
 
 ### imrc - Import React, Component
 
 ```javascript
-import React, { Component } from 'react';
+import * as React from 'react';
+import { Component } from 'react';
 ```
+
 ### imrs - Import React, useState
 
 ```javascript
-import React, { useState } from 'react';
+import * as React from 'react';
+import { useState } from 'react';
 ```
 
 ### imrse - Import React, useState, useEffect
 
 ```javascript
-import React, { useState, useEffect } from 'react';
+import * as React from 'react';
+import { useState, useEffect } from 'react';
 ```
 
 ### impt - Import PropTypes
@@ -80,7 +84,8 @@ import PropTypes from 'prop-types';
 ### impc - Import PureComponent
 
 ```javascript
-import React, { PureComponent } from 'react';
+import * as React from 'react';
+import { PureComponent } from 'react';
 ```
 
 ### cc - Class Component
@@ -112,7 +117,7 @@ class | extends Component {
 export default |;
 ```
 
-### ccc - Class Component With Constructor
+### cpc - Class Pure Component
 
 ```javascript
 class | extends PureComponent {

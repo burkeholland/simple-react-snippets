@@ -110,22 +110,34 @@
     "description": "Class Component with Constructor"
   },
 
-  "Stateless Function Component": {
-    "prefix": "sfc",
+  "Function Component": {
+    "prefix": "fc",
     "body": [
       "export interface $1Props {",
       "\t$2",
       "}",
       " ",
-      "const $1: React.SFC<$1Props> = ($3) => {",
+      "const $1: React.FC<$1Props> = ($3) => {",
       "\treturn ( $0 );",
       "}",
       " ",
       "export default $1;"
     ],
-    "description": "Stateless Function Component"
+    "description": "Function Component"
   },
 
+  "Function Syntax Component": {
+    "prefix": "ffc",
+    "body": [
+      "function $1($2) {",
+      "\treturn ( $0 );",
+      "}",
+      "",
+      "export default $1;"
+    ],
+    "description": "Function Syntax Component"
+  },
+  
   "componentDidMount": {
     "prefix": "cdm",
     "body": ["componentDidMount() {", "\t$0", "}"],
