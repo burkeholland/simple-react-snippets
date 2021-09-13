@@ -116,8 +116,8 @@
     "description": "Class Component with Constructor"
   },
 
-  "Function Component": {
-    "prefix": "fc",
+  "Stateless Function Component": {
+    "prefix": "sfc",
     "body": [
       "interface $1Props {",
       "\t$2",
