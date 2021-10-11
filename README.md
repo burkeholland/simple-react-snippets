@@ -28,7 +28,8 @@ that work the way that you would expect, not just a copy of the documentation.
 | `cc`    | Class Component                  |
 | `ccc`   | Class Component With Constructor |
 | `cpc`   | Class Pure Component             |
-| `fc`    | Function Component               |
+| `ffc`   | Function Component               |
+| `sfc`   | Stateless Function Component (Arrow function) |
 | `cdm`   | componentDidMount                |
 | `uef`   | useEffect Hook                   |
 | `cwm`   | componentWillMount               |
@@ -136,7 +137,16 @@ class | extends PureComponent {
 export default |;
 ```
 
-### fc - Function Component
+### ffc - Function Component
+```javascript
+function (|) {
+    return ( | );
+}
+
+export default |;
+```
+
+### sfc - Stateless Function Component (Arrow function)
 
 ```javascript
 const | = props => {
