@@ -24,6 +24,7 @@
     "onCommand:extension.stayClassy"
   ],
   "main": "./out/src/extension",
+  "browser": "./out/src/extension",
   "contributes": {
     "snippets": [
       {
