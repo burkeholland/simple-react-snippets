@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.2.4
+
+- `fc` now listed as `ffc`
+
 ## 1.2.3
 
 - Add PureComponent class snippet thanks to [@rbtprograms](https://github.com/rbtprograms)
