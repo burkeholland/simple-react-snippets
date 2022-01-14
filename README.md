@@ -333,11 +333,4 @@ command is executed on the entire document.
 
 ## Thank You! ❤️
 
-Special thanks to the following individuals who have helped with this project in
-some way.
-
-- [@dan_abramov](https://twitter.com/dan_abramov)
-- [@adiun](https://twitter.com/adiun)
-- [@will-stone](https://github.com/will-stone)
-- [@blurbye](https://github.com/blurbyte)
-- [@rbtprograms](https://github.com/rbtprograms)
+While I wrote the initial version of this extension, many people (too many to name) have helped make it what it is today. From providing TypeScript definitions to keeping up with changing API and best practices. If you are enjoying this extension, you have the great React community to thank.
