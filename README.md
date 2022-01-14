@@ -28,7 +28,8 @@ that work the way that you would expect, not just a copy of the documentation.
 | `cc`    | Class Component                  |
 | `ccc`   | Class Component With Constructor |
 | `cpc`   | Class Pure Component             |
-| `fc`    | Function Component               |
+| `sfc`   | Stateless Function Component     |
+| `ffc`   | Function Function Component      |
 | `cdm`   | componentDidMount                |
 | `uef`   | useEffect Hook                   |
 | `cwm`   | componentWillMount               |
@@ -37,7 +38,7 @@ that work the way that you would expect, not just a copy of the documentation.
 | `scu`   | shouldComponentUpdate            |
 | `cwu`   | componentWillUpdate              |
 | `cdu`   | componentDidUpdate               |
-| `cwu`   | componentWillUpdate              |
+| `cwun`  | componentWillUnmount             |
 | `cdc`   | componentDidCatch                |
 | `gsbu`  | getSnapshotBeforeUpdate          |
 | `ss`    | setState                         |
@@ -46,6 +47,8 @@ that work the way that you would expect, not just a copy of the documentation.
 | `ren`   | render                           |
 | `rprop` | Render Prop                      |
 | `hoc`   | Higher Order Component           |
+| `cp`    | Context Provider                 |
+| `cpf`   | Class Property Function          |
 
 ## Full Expansions
 
