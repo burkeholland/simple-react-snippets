@@ -48,9 +48,10 @@
   "Class Component": {
     "prefix": "cc",
     "body": [
-      "class $1 extends React.Component {",
+      "class $1 extends Component {",
+      "\tstate = { $2 } ",
       "\trender() { ",
-      "\t\treturn <div>$0</div>;",
+      "\t\treturn ($0);",
       "\t}",
       "}",
       " ",
@@ -80,8 +81,8 @@
       "class $1 extends Component {",
       "\tconstructor(props) {",
       "\t\tsuper(props);",
-      "\t\tthis.state = { $2 }",
       "\t}",
+      "\tstate = { $2 }",
       "\trender() { ",
       "\t\treturn ( $0 );",
       "\t}",
