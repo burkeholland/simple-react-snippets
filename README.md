@@ -16,86 +16,86 @@ that work the way that you would expect, not just a copy of the documentation.
 
 ## Snippets
 
-| Snippet | Renders                          |
-| ------- | -------------------------------- |
-| `imr`   | Import React                     |
-| `imrc`  | Import React / Component         |
-| `imrd`  | Import ReactDOM                  |
-| `imrs`  | Import React / useState          |
-| `imrse` | Import React / useState useEffect|
-| `impt`  | Import PropTypes                 |
-| `impc`  | Import React / PureComponent     |
-| `cc`    | Class Component                  |
-| `ccc`   | Class Component With Constructor |
-| `cpc`   | Class Pure Component             |
-| `sfc`   | Stateless Function Component     |
-| `ffc`   | Function Function Component      |
-| `cdm`   | componentDidMount                |
-| `uef`   | useEffect Hook                   |
-| `cwm`   | componentWillMount               |
-| `cwrp`  | componentWillReceiveProps        |
-| `gds`   | getDerivedStateFromProps         |
-| `scu`   | shouldComponentUpdate            |
-| `cwu`   | componentWillUpdate              |
-| `cdu`   | componentDidUpdate               |
-| `cwun`  | componentWillUnmount             |
-| `cdc`   | componentDidCatch                |
-| `gsbu`  | getSnapshotBeforeUpdate          |
-| `ss`    | setState                         |
-| `ssf`   | Functional setState              |
+| Snippet | Renders                                       |
+| ------- | --------------------------------------------- |
+| `imr`   | Import React                                  |
+| `imrc`  | Import React / Component                      |
+| `imrd`  | Import ReactDOM                               |
+| `imrs`  | Import React / useState                       |
+| `imrse` | Import React / useState useEffect             |
+| `impt`  | Import PropTypes                              |
+| `impc`  | Import React / PureComponent                  |
+| `cc`    | Class Component                               |
+| `ccc`   | Class Component With Constructor              |
+| `cpc`   | Class Pure Component                          |
+| `ffc`   | Function Component                            |
+| `sfc`   | Stateless Function Component (Arrow function) |
+| `cdm`   | componentDidMount                             |
+| `uef`   | useEffect Hook                                |
+| `cwm`   | componentWillMount                            |
+| `cwrp`  | componentWillReceiveProps                     |
+| `gds`   | getDerivedStateFromProps                      |
+| `scu`   | shouldComponentUpdate                         |
+| `cwu`   | componentWillUpdate                           |
+| `cdu`   | componentDidUpdate                            |
+| `cwun`  | componentWillUnmount                          |
+| `cdc`   | componentDidCatch                             |
+| `gsbu`  | getSnapshotBeforeUpdate                       |
+| `ss`    | setState                                      |
+| `ssf`   | Functional setState                           |
 | `usf`   | Declare a new state variable using State Hook |
-| `ren`   | render                           |
-| `rprop` | Render Prop                      |
-| `hoc`   | Higher Order Component           |
-| `cp`    | Context Provider                 |
-| `cpf`   | Class Property Function          |
+| `ren`   | render                                        |
+| `rprop` | Render Prop                                   |
+| `hoc`   | Higher Order Component                        |
+| `cp`    | Context Provider                              |
+| `cpf`   | Class Property Function                       |
 
 ## Full Expansions
 
 ### imr - Import React
 
 ```javascript
-import * as React from 'react';
+import * as React from "react";
 ```
 
 ### imrc - Import React, Component
 
 ```javascript
-import * as React from 'react';
-import { Component } from 'react';
+import * as React from "react";
+import { Component } from "react";
 ```
 
 ### imrd - Import ReactDOM
 
 ```javascript
-import ReactDOM from 'react-dom';
+import ReactDOM from "react-dom";
 ```
 
 ### imrs - Import React, useState
 
 ```javascript
-import * as React from 'react';
-import { useState } from 'react';
+import * as React from "react";
+import { useState } from "react";
 ```
 
 ### imrse - Import React, useState, useEffect
 
 ```javascript
-import * as React from 'react';
-import { useState, useEffect } from 'react';
+import * as React from "react";
+import { useState, useEffect } from "react";
 ```
 
 ### impt - Import PropTypes
 
 ```javascript
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 ```
 
 ### impc - Import PureComponent
 
 ```javascript
-import * as React from 'react';
-import { PureComponent } from 'react';
+import * as React from "react";
+import { PureComponent } from "react";
 ```
 
 ### cc - Class Component
@@ -139,7 +139,17 @@ class | extends PureComponent {
 export default |;
 ```
 
-### fc - Function Component
+### ffc - Function Component
+
+```javascript
+function (|) {
+    return ( | );
+}
+
+export default |;
+```
+
+### sfc - Stateless Function Component (Arrow function)
 
 ```javascript
 const | = props => {
@@ -158,7 +168,7 @@ componentDidMount() {
 ```
 
 ### uef - useEffect Hook
-  
+
 ```javascript
 useEffect(() => {
   |
@@ -259,7 +269,8 @@ this.setState(prevState => {
 ```javascript
 const [|, set|] = useState();
 ```
-*Hit Tab to apply CamelCase to function. e.g. [count, setCount]*
+
+_Hit Tab to apply CamelCase to function. e.g. [count, setCount]_
 
 ### ren - render
 
