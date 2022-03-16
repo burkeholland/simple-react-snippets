@@ -32,6 +32,7 @@ that work the way that you would expect, not just a copy of the documentation.
 | `sfc`   | Stateless Function Component (Arrow function) |
 | `cdm`   | componentDidMount                             |
 | `uef`   | useEffect Hook                                |
+| `ucf`   | useCallback Hook                              |
 | `cwm`   | componentWillMount                            |
 | `cwrp`  | componentWillReceiveProps                     |
 | `gds`   | getDerivedStateFromProps                      |
@@ -171,6 +172,14 @@ componentDidMount() {
 
 ```javascript
 useEffect(() => {
+  |
+}, []);
+```
+
+### ucf - useCallback Hook
+
+```javascript
+useCallback((val) => {
   |
 }, []);
 ```
