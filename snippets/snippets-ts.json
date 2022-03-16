@@ -161,7 +161,7 @@
   },
 
   "useCallback": {
-    "prefix": "ucf",
+    "prefix": "ucb",
     "body": [
       "useCallback((val) => {",
       "\t$1",
