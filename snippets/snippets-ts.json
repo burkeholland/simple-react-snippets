@@ -119,6 +119,8 @@
   "Function Component": {
     "prefix": "fc",
     "body": [
+      "import { FunctionComponent } from 'react';"
+      "\t"
       "interface $1Props {",
       "\t$2",
       "}",
