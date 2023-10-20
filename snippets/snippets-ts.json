@@ -175,8 +175,8 @@
   "useCallback": {
     "prefix": "ucb",
     "body": [
-      "useCallback((val) => {",
-      "\t$1",
+      "useCallback((val$1) => {",
+      "\t$2",
       "}, []);"
     ],
     "description": "useCallback Hook"
