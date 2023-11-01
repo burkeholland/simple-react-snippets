@@ -155,7 +155,7 @@
     ],
     "description": "Stateless Function Component"
   },
-  
+
   "componentDidMount": {
     "prefix": "cdm",
     "body": ["componentDidMount() {", "\t$0", "}"],
@@ -273,5 +273,36 @@
       "export default $1;"
     ],
     "description": "Render Prop"
+  },
+
+  "Context Provider": {
+    "prefix": "cp",
+    "body": [
+      "import { createContext } from 'react';",
+      "",
+      "type ${1/(.*)/${1:/capitalize}/}ContextProviderProps = {",
+      "\tchildren: React.ReactNode;",
+      "};",
+      "",
+      "type ${1/(.*)/${1:/capitalize}/}ContextType = {",
+      "\t$2",
+      "};",
+      "",
+      "export const ${1/(.*)/${1:/capitalize}/}Context = createContext({} as ${1/(.*)/${1:/capitalize}/}ContextType);",
+      "",
+      "export const ${1/(.*)/${1:/capitalize}/}ContextProvider = ({ children }: ${1/(.*)/${1:/capitalize}/}ContextProviderProps) => {",
+      "",
+      "\treturn (",
+      "\t\t<${1/(.*)/${1:/capitalize}/}Context.Provider",
+      "\t\t\tvalue={{",
+      "\t\t\t\t$3",
+      "\t\t\t}}",
+      "\t\t>",
+      "\t\t\t{children}",
+      "\t\t</${1/(.*)/${1:/capitalize}/}Context.Provider>",
+      "\t);",
+      "};"
+    ],
+    "description": "Declare a new Context Provider. Hit Tab to apply PascalCase to type names."
   }
 }
