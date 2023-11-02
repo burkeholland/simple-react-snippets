@@ -155,7 +155,7 @@
     ],
     "description": "Stateless Function Component"
   },
-  
+
   "componentDidMount": {
     "prefix": "cdm",
     "body": ["componentDidMount() {", "\t$0", "}"],
@@ -273,5 +273,15 @@
       "export default $1;"
     ],
     "description": "Render Prop"
+  },
+
+  "Function Syntax Component Inline": {
+    "prefix": "effc",
+    "body": [
+      "export default function $1($2) {",
+      "\treturn ( $0 );",
+      "}"
+    ],
+    "description": "Function Syntax Component Inline"
   }
 }
