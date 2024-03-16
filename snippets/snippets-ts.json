@@ -155,6 +155,16 @@
     ],
     "description": "Stateless Function Component"
   },
+
+  "Stateless Function Named Component": {
+    "prefix": "sfnc",
+    "body": [
+      "export const $1 = ($2) => {",
+      "\treturn ( $0 );",
+      "}"
+    ],
+    "description": "Stateless Function Named Component"
+  },
   
   "componentDidMount": {
     "prefix": "cdm",
