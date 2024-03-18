@@ -159,8 +159,15 @@
   "Stateless Function Named Component": {
     "prefix": "sfnc",
     "body": [
-      "export const $1 = ($2) => {",
-      "\treturn ( $0 );",
+      "type Props = {",
+      " ",
+      "}",
+      "export const $1 = ({}: Props) => {",
+      "\treturn ( ",
+      "\t\t<div>",
+      "\t\t\t$0",
+      "\t\t</div>",
+      "\t);",
       "}"
     ],
     "description": "Stateless Function Named Component"
