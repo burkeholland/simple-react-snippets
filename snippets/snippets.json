@@ -215,6 +215,12 @@
     "description": "Declare a new state Variable using the State Hook. Hit Tab to apply CamelCase to function"
   },
 
+  "Declare a new ref variable using Ref Hook": {
+    "prefix": "usr",
+    "body": ["const ${1} = useRef($2);"],
+    "description": "Declare a new ref Variable using the Ref Hook."
+  },
+
   "render": {
     "prefix": "ren",
     "body": ["render() {", "\treturn (", "\t\t $0", "\t);", "}"],
