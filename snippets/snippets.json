@@ -143,6 +143,16 @@
     "description": "useEffect Hook"
   },
 
+  "useCallback": {
+    "prefix": "ucb",
+    "body": [
+      "useCallback((val$1) => {",
+      "\t$2",
+      "}, []);"
+    ],
+    "description": "useCallback Hook"
+  },
+
   "componentWillMount": {
     "prefix": "cwm",
     "body": ["//WARNING! To be deprecated in React v17. Use componentDidMount instead.", "componentWillMount() {", "\t$0", "}"],

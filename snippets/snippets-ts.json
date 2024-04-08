@@ -184,6 +184,15 @@
     ],
     "description": "useEffect Hook"
   },
+  "useCallback": {
+    "prefix": "ucb",
+    "body": [
+      "useCallback((val$1) => {",
+      "\t$2",
+      "}, []);"
+    ],
+    "description": "useCallback Hook"
+  },
   "componentWillMount": {
     "prefix": "cwm",
     "body": [
