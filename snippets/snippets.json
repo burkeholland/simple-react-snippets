@@ -104,6 +104,16 @@
     ],
     "description": "Stateless Function Component"
   },
+  
+  "Stateless Function Named Component": {
+    "prefix": "sfnc",
+    "body": [
+      "export const $1 = ($2) => {",
+      "\treturn ( $0 );",
+      "}"
+    ],
+    "description": "Stateless Function Named Component"
+  },
 
   "Function Syntax Component": {
     "prefix": "ffc",
@@ -131,6 +141,16 @@
       "}, []);"
     ],
     "description": "useEffect Hook"
+  },
+
+  "useCallback": {
+    "prefix": "ucb",
+    "body": [
+      "useCallback((val$1) => {",
+      "\t$2",
+      "}, []);"
+    ],
+    "description": "useCallback Hook"
   },
 
   "componentWillMount": {
@@ -203,6 +223,12 @@
     "prefix": "usf",
     "body": ["const [${1}, set${1/(.*)/${1:/capitalize}/}] = useState($2);"],
     "description": "Declare a new state Variable using the State Hook. Hit Tab to apply CamelCase to function"
+  },
+
+  "Declare a new ref variable using Ref Hook": {
+    "prefix": "usr",
+    "body": ["const ${1} = useRef($2);"],
+    "description": "Declare a new ref Variable using the Ref Hook."
   },
 
   "render": {

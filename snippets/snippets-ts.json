@@ -1,10 +1,11 @@
 {
   "Import React": {
     "prefix": "imr",
-    "body": ["import * as React from 'react';\n"],
+    "body": [
+      "import * as React from 'react';\n"
+    ],
     "description": "Import React"
   },
-
   "Import React and Component": {
     "prefix": "imrc",
     "body": [
@@ -13,13 +14,13 @@
     ],
     "description": "Import React, { Component }"
   },
-
   "Import ReactDOM": {
     "prefix": "imrd",
-    "body": ["import ReactDOM from 'react-dom';"],
+    "body": [
+      "import ReactDOM from 'react-dom';"
+    ],
     "description": "Import ReactDOM"
   },
-
   "Import React, { useState }": {
     "prefix": "imrs",
     "body": [
@@ -28,7 +29,6 @@
     ],
     "description": "Import React, { useState }"
   },
-
   "Import React, { useState, useEffect }": {
     "prefix": "imrse",
     "body": [
@@ -37,13 +37,13 @@
     ],
     "description": "Import React, { useState, useEffect }"
   },
-
   "Import Pure Component": {
     "prefix": "impc",
-    "body": ["import React, { PureComponent } from 'react';\n"],
+    "body": [
+      "import React, { PureComponent } from 'react';\n"
+    ],
     "description": "Import React, { PureComponent }"
   },
-
   "Class Component": {
     "prefix": "cc",
     "body": [
@@ -66,7 +66,6 @@
     ],
     "description": "Class Component"
   },
-
   "Class Pure Component": {
     "prefix": "cpc",
     "body": [
@@ -89,7 +88,6 @@
     ],
     "description": "Class Pure Component"
   },
-
   "Class Component Constructor": {
     "prefix": "ccc",
     "body": [
@@ -115,7 +113,6 @@
     ],
     "description": "Class Component with Constructor"
   },
-
   "Function Component": {
     "prefix": "fc",
     "body": [
@@ -131,7 +128,6 @@
     ],
     "description": "Function Component"
   },
-
   "Function Syntax Component": {
     "prefix": "ffc",
     "body": [
@@ -143,7 +139,6 @@
     ],
     "description": "Function Syntax Component"
   },
-
   "Stateless Function Component": {
     "prefix": "sfc",
     "body": [
@@ -155,13 +150,31 @@
     ],
     "description": "Stateless Function Component"
   },
-
+  "Stateless Function Named Component": {
+    "prefix": "sfnc",
+    "body": [
+      "type Props = {",
+      " ",
+      "}",
+      "export const $1 = ({}: Props) => {",
+      "\treturn ( ",
+      "\t\t<div>",
+      "\t\t\t$0",
+      "\t\t</div>",
+      "\t);",
+      "}"
+    ],
+    "description": "Stateless Function Named Component"
+  },
   "componentDidMount": {
     "prefix": "cdm",
-    "body": ["componentDidMount() {", "\t$0", "}"],
+    "body": [
+      "componentDidMount() {",
+      "\t$0",
+      "}"
+    ],
     "description": "componentDidMount"
   },
-
   "useEffect": {
     "prefix": "uef",
     "body": [
@@ -171,73 +184,115 @@
     ],
     "description": "useEffect Hook"
   },
-
+  "useCallback": {
+    "prefix": "ucb",
+    "body": [
+      "useCallback((val$1) => {",
+      "\t$2",
+      "}, []);"
+    ],
+    "description": "useCallback Hook"
+  },
   "componentWillMount": {
     "prefix": "cwm",
-    "body": ["//WARNING! To be deprecated in React v17. Use componentDidMount instead.", "componentWillMount() {", "\t$0", "}"],
+    "body": [
+      "//WARNING! To be deprecated in React v17. Use componentDidMount instead.",
+      "componentWillMount() {",
+      "\t$0",
+      "}"
+    ],
     "description": "componentWillMount"
   },
-
   "componentWillReceiveProps": {
     "prefix": "cwrp",
-    "body": ["//WARNING! To be deprecated in React v17. Use new lifecycle static getDerivedStateFromProps instead.", "componentWillReceiveProps(nextProps: $1Props) {", "\t$0", "}"],
+    "body": [
+      "//WARNING! To be deprecated in React v17. Use new lifecycle static getDerivedStateFromProps instead.",
+      "componentWillReceiveProps(nextProps: $1Props) {",
+      "\t$0",
+      "}"
+    ],
     "description": "componentWillReceiveProps"
   },
-
   "getDerivedStateFromProps": {
     "prefix": "gds",
-    "body": ["static getDerivedStateFromProps(nextProps: $1Props, prevState: $1State) {", "\t$0", "}"],
+    "body": [
+      "static getDerivedStateFromProps(nextProps: $1Props, prevState: $1State) {",
+      "\t$0",
+      "}"
+    ],
     "description": "getDerivedStateFromProps"
   },
-
   "shouldComponentUpdate": {
     "prefix": "scu",
-    "body": ["shouldComponentUpdate(nextProps: $1Props, nextState: $1State) {", "\t$0", "}"],
+    "body": [
+      "shouldComponentUpdate(nextProps: $1Props, nextState: $1State) {",
+      "\t$0",
+      "}"
+    ],
     "description": "shouldComponentUpdate"
   },
-
   "componentWillUpdate": {
     "prefix": "cwu",
-    "body": ["//WARNING! To be deprecated in React v17. Use componentDidUpdate instead.", "componentWillUpdate(nextProps: $1Props, nextState: $1State) {", "\t$0", "}"],
+    "body": [
+      "//WARNING! To be deprecated in React v17. Use componentDidUpdate instead.",
+      "componentWillUpdate(nextProps: $1Props, nextState: $1State) {",
+      "\t$0",
+      "}"
+    ],
     "description": "componentWillUpdate"
   },
-
   "componentDidUpdate": {
     "prefix": "cdu",
-    "body": ["componentDidUpdate(prevProps: $1Props, prevState: $1State) {", "\t$0", "}"],
+    "body": [
+      "componentDidUpdate(prevProps: $1Props, prevState: $1State) {",
+      "\t$0",
+      "}"
+    ],
     "description": "componentDidUpdate"
   },
-
   "componentWillUnmount": {
     "prefix": "cwun",
-    "body": ["componentWillUnmount() {", "\t$0", "}"],
+    "body": [
+      "componentWillUnmount() {",
+      "\t$0",
+      "}"
+    ],
     "description": "componentWillUnmount"
   },
-
   "componentDidCatch": {
     "prefix": "cdc",
-    "body": ["componentDidCatch(error, info) {", "\t$0", "}"],
+    "body": [
+      "componentDidCatch(error, info) {",
+      "\t$0",
+      "}"
+    ],
     "description": "componentDidCatch"
   },
-
   "getSnapshotBeforeUpdate": {
     "prefix": "gsbu",
-    "body": ["getSnapshotBeforeUpdate(prevProps: $1Props, prevState: $1State) {", "\t$0", "}"],
+    "body": [
+      "getSnapshotBeforeUpdate(prevProps: $1Props, prevState: $1State) {",
+      "\t$0",
+      "}"
+    ],
     "description": "getSnapshotBeforeUpdate"
   },
-
   "setState": {
     "prefix": "ss",
-    "body": ["this.setState({ $1: $2 });"],
+    "body": [
+      "this.setState({ $1: $2 });"
+    ],
     "description": "setState"
   },
-
   "Functional setState": {
     "prefix": "ssf",
-    "body": ["this.setState(prevState => {", "\treturn { $1: prevState.$1 };", "});"],
+    "body": [
+      "this.setState(prevState => {",
+      "\treturn { $1: prevState.$1 };",
+      "});"
+    ],
     "description": "Functional setState"
   },
-
   "Declare a new state variable using State Hook": {
     "prefix": "usf",
     "body": [
@@ -245,13 +300,24 @@
     ],
     "description": "Declare a new state Variable using the State Hook. Hit Tab to apply CamelCase to function"
   },
-
+  "Declare a new ref variable using Ref Hook": {
+    "prefix": "usr",
+    "body": [
+      "const ${1} = useRef($2);"
+    ],
+    "description": "Declare a new ref Variable using the Ref Hook."
+  },
   "render": {
     "prefix": "ren",
-    "body": ["render() {", "\treturn (", "\t\t $0", "\t);", "}"],
+    "body": [
+      "render() {",
+      "\treturn (",
+      "\t\t $0",
+      "\t);",
+      "}"
+    ],
     "description": "render"
   },
-
   "Render Prop": {
     "prefix": "rprop",
     "body": [
@@ -274,7 +340,6 @@
     ],
     "description": "Render Prop"
   },
-
   "Function Syntax Component Inline": {
     "prefix": "effc",
     "body": [
@@ -283,5 +348,35 @@
       "}"
     ],
     "description": "Function Syntax Component Inline"
+  },
+  "Context Provider": {
+    "prefix": "cp",
+    "body": [
+      "import { createContext } from 'react';",
+      "",
+      "type ${1/(.*)/${1:/capitalize}/}ContextProviderProps = {",
+      "\tchildren: React.ReactNode;",
+      "};",
+      "",
+      "type ${1/(.*)/${1:/capitalize}/}ContextType = {",
+      "\t$2",
+      "};",
+      "",
+      "export const ${1/(.*)/${1:/capitalize}/}Context = createContext({} as ${1/(.*)/${1:/capitalize}/}ContextType);",
+      "",
+      "export const ${1/(.*)/${1:/capitalize}/}ContextProvider = ({ children }: ${1/(.*)/${1:/capitalize}/}ContextProviderProps) => {",
+      "",
+      "\treturn (",
+      "\t\t<${1/(.*)/${1:/capitalize}/}Context.Provider",
+      "\t\t\tvalue={{",
+      "\t\t\t\t$3",
+      "\t\t\t}}",
+      "\t\t>",
+      "\t\t\t{children}",
+      "\t\t</${1/(.*)/${1:/capitalize}/}Context.Provider>",
+      "\t);",
+      "};"
+    ],
+    "description": "Declare a new Context Provider. Hit Tab to apply PascalCase to type names."
   }
 }
