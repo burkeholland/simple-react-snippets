@@ -340,6 +340,15 @@
     ],
     "description": "Render Prop"
   },
+  "Function Syntax Component Inline": {
+    "prefix": "effc",
+    "body": [
+      "export default function $1($2) {",
+      "\treturn ( $0 );",
+      "}"
+    ],
+    "description": "Function Syntax Component Inline"
+  },
   "Context Provider": {
     "prefix": "cp",
     "body": [
