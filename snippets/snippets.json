@@ -60,6 +60,18 @@
     "description": "Class Component"
   },
 
+  "Create Component": {
+    "prefix": "exf",
+    "body": [
+      "export function App(){",
+      		"  return(",
+			  	"   <>\n",
+			  	"   </>",
+      		"  )};\n"
+    ],
+    "description": "Class Component"
+  },
+
   "Class Pure Component": {
     "prefix": "cpc",
     "body": [
