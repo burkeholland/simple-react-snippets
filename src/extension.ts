@@ -4,7 +4,7 @@
 import { languages, window, commands, ExtensionContext, Range, TextDocument } from 'vscode';
 import { workspace } from 'vscode';
 
-let regex = new RegExp(/(class=)/g, 'ig');
+let regex = /(class=)/ig;
 
 function fullDocumentRange(document: TextDocument): Range {
   const lastLineId = document.lineCount - 1;
@@ -40,7 +40,7 @@ export function activate(context: ExtensionContext) {
 
     // this function is where the editor is actually updated with the changed text
     editor.edit(builder => {
-      let classyText = text.replace(new RegExp(/(class=)/g, 'ig'), 'className=');
+      let classyText = text.replace(/(class=)/ig, 'className=');
       builder.replace(range, classyText);
     });
 
